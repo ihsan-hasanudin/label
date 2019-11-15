@@ -61,6 +61,7 @@
                                 <th style="width: 25px;">No.</th>
                                 <th>Nama</th>
                                 <th>Alamat</th>
+                                <th style="width: 40px;">~</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -68,6 +69,9 @@
                                 <td>{{$index + 1}}</td>
                                 <td>{{x.nama}}</td>
                                 <td>{{x.alamat}}</td>
+                                <td>
+                                    <button class="btn red" ng-click="hapusOrang($index)">Hapus</button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

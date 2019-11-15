@@ -22,7 +22,7 @@ window.onload = function () {
             };
             console.log(akhir)
             $(this).val(gelarDepan + namaLengkap.split(" ").map(x => x.substr(0, 1).toUpperCase() +
-                x.substr(1).toLowerCase()).join(" ") + gelar);
+                x.substr(1)).join(" ") + gelar);
         }
 
         function apaValid(x) {
