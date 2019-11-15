@@ -62,9 +62,9 @@ app.controller('labelCtl', function ($scope, $http, $timeout) {
         $scope.saveChanges();
     }
 
-    $scope.buatDokumen = function () {
+    $scope.buatDokumen = function (i) {
         // alert("buat dokumen");
-        buatDoc($scope.grup);
+        buatDoc($scope.grup, i);
     }
 
     $scope.tambah = function (x, y, z) {
@@ -84,7 +84,7 @@ app.controller('labelCtl', function ($scope, $http, $timeout) {
     }
 });
 
-function buatDoc(grup) {
+function buatDoc(grup, pilihan) {
     function loadFile(url, callback) {
         PizZipUtils.getBinaryContent(url, callback);
     }
@@ -182,8 +182,8 @@ function buatDoc(grup) {
             });
 
             data = {
-                title : "judul",
-                loop:[...loop]
+                title: "judul",
+                loop: [...loop]
             }
 
             generateDocx(loc, data, `LABEL_grup_${nama_grup}.docx`);
@@ -209,8 +209,20 @@ function buatDoc(grup) {
             generateDocx(loc, data, `REKAP_grup_${nama_grup}.docx`);
         });
     }
-    buatRekap();
-    buatLabel();
+
+    switch (pilihan) {
+        case 0:
+            buatRekap();
+            buatLabel();
+            break;
+
+        case 1:
+            buatLabel();
+            break;
+        case 2:
+            buatRekap();
+            break;
+    }
 }
 
 app.filter('mathCeil', function () {
