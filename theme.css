@@ -1,0 +1,81 @@
+input[type='text'],
+input[type='password'] {
+    background: rgb(46, 46, 46);
+    padding: 5px 5px;
+    border-radius: 2px;
+    margin: 2px;
+    color: rgb(214, 214, 214);
+}
+
+.btn {
+    background: rgb(0, 68, 0);
+    border-radius: 2px;
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.555);
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+.btn.red{
+    background: rgb(97, 0, 0);
+}
+
+.btn.border-right{
+    border-radius: 5px 10px;
+}
+
+.btn:hover {
+    filter: brightness(1.4);
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.062);
+}
+
+table,
+tr,
+td,
+th {
+    /* color: black; */
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+}
+
+th {
+    text-align: center;
+}
+
+tr,
+td,
+th {
+    padding: 7px 10px;
+}
+
+ul > li{
+    border: 1px solid rgba(59, 59, 59, 0.541);
+    margin-bottom: 10px;
+}
+
+ul > li.active{
+    background-color: rgb(122, 122, 122);
+}
+
+.li-container{
+    padding: 5px 5px;
+    flex-direction: row;
+    display: flex;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+
+.box{
+    margin: 20px 20px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 20px;
+    padding: 14px;
+}

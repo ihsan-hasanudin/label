@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Label</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body ng-app="labelKu" ng-controller="labelCtl" id="labelApp">
+    <div id="app">
+        <div class="section1">
+            <h2>Grup</h2>
+            <div id="tambah-grup-section">
+                <form>
+                    <input type="text" ng-model="tambahGrup_text" kapital-oto autofocus>
+                    <input class="btn" type="submit" value="TAMBAH" ng-click="tambahGrup(tambahGrup_text)">
+                </form>
+            </div>
+            <div id="daftar-section">
+                <ul>
+                    <li ng-repeat="(k,v) in grup" ng-click="pilihGrup(k)" ng-class="{active:grupTerpilih==k}">
+                        <div class="li-container">
+                            <div style="flex:2; padding-left: 5px;">
+                                <h3>{{k}}</h3>
+                                <p>{{v.length}} Orang</p>
+                            </div>
+                            <div style="flex:1; margin-left:5px">
+                                <button class="btn red" style="height: 100%; width: 100%;" ng-click="hapusGrup(k)">HAPUS</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="section2">
+            <div class="section2-content" ng-hide="grupTerpilih.length==0">
+                <div>
+                    <h2>Daftar <b>{{grupTerpilih}}</b></h2>
+                </div>
+
+                <div class="box">
+                    <h3 style="margin-bottom:5px">Tambah {{grupTerpilih}}</h3>
+                    <div>
+                        <form>
+                            <input type="text" name="nama" placeholder="Nama" ng-model="t_nama" id="kolomNama"
+                                kapital-oto>
+                            <input type="text" name="alamat" placeholder="Alamat" ng-model="t_alamat" kapital-oto>
+                            <input class="btn" type="submit" value="TAMBAH" ng-click="tambahOrang()">
+                        </form>
+                    </div>
+                </div>
+
+                <div style="height: 450px; overflow-y: auto;">
+                    <table ng-hide="grup[grupTerpilih].length==0">
+                        <thead>
+                            <tr>
+                                <th style="width: 25px;">No.</th>
+                                <th>Nama</th>
+                                <th>Alamat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="x in grup[grupTerpilih] track by $index">
+                                <td>{{$index + 1}}</td>
+                                <td>{{x.nama}}</td>
+                                <td>{{x.alamat}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="section3">
+            <h3>Buat Label</h3>
+            <div id="buat-hapus-section">
+                <button class="btn" ng-click="buatDokumen()">BUAT</button>
+                <button class="btn">HAPUS</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./lib/docxtemplater.js"></script>
+<script src="./lib/FileSaver.js"></script>
+<script src="./lib/pizzip.js"></script>
+<script src="./lib/pizzip-utils.js"></script>
+<script src="./input_listener.js"></script>
+<script src='./lib/angular.min.js'></script>
+<script src='./lib/jquery.min.js'></script>
+<script src="./lib/lodash.min.js"></script>
+<script src="./app.js"></script>
+</html>

@@ -1,0 +1,57 @@
+@import './reset.css';
+@import './theme.css';
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(34, 34, 34);
+}
+
+#app{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.section1{
+    flex: 1;
+    background-color: rgb(153, 153, 153);
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.section1 #tambah-grup-section{
+    margin-bottom: 20px;
+}
+
+.section1 #daftar-section{
+    flex: 1;
+}
+.section1 #buat-hapus-section{
+    flex: 1;
+    align-self: flex-end;
+}
+
+.section2{
+    background-color: rgb(221, 221, 221);
+    flex: 3;
+    padding: 10px 10px;
+}
+
+.section3{
+    background-color: rgb(224, 193, 193);
+    flex: 1;
+    padding: 10px 10px;
+}
