@@ -1,0 +1,192 @@
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: transparent;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font-family: inherit;
+    padding: 5px 5px;
+    border-width: none;
+    border-style: none;
+    border-color: none;
+    border-image: none;
+}
+
+/* input[type='text'] */
+
+button {
+    background: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+h1,h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    display: inline;
+}
+
+/* */
+
+
+input[type='text'],
+input[type='password'] {
+    background: rgb(46, 46, 46);
+    padding: 5px 5px;
+    border-radius: 2px;
+    margin: 2px;
+    color: rgb(214, 214, 214);
+}
+
+.btn {
+    background: rgb(0, 68, 0);
+    border-radius: 2px;
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.555);
+    transition: all 0.5s ease;
+    cursor: default;
+}
+
+.btn.red{
+    background: rgb(97, 0, 0);
+}
+
+.btn.border-right{
+    border-radius: 5px 10px;
+}
+
+.btn:hover {
+    filter: brightness(1.4);
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.062);
+}
+
+table,
+tr,
+td,
+th {
+    /* color: black; */
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+}
+
+th {
+    text-align: center;
+}
+
+tr,
+td,
+th {
+    padding: 7px 10px;
+}
+
+ul > li{
+    border: 1px solid rgba(59, 59, 59, 0.541);
+    margin-bottom: 10px;
+}
+
+ul > li.active{
+    background-color: rgb(122, 122, 122);
+}
+
+.li-container{
+    padding: 5px 5px;
+    flex-direction: row;
+    display: flex;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+
+.box{
+    margin: 20px 20px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 20px;
+    padding: 14px;
+}
+
+/*  */
+
+*{
+    box-sizing: border-box;
+}
+
+#labelApp{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#labelApp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(34, 34, 34);
+    display: flex;
+}
+
+#labelApp{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.section1{
+    flex: 1;
+    background-color: rgb(153, 153, 153);
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.section1 #tambah-grup-section{
+    margin-bottom: 20px;
+}
+
+.section1 #daftar-section{
+    flex: 1;
+}
+.section1 #buat-hapus-section{
+    flex: 1;
+    align-self: flex-end;
+}
+
+.section2{
+    background-color: rgb(221, 221, 221);
+    flex: 3;
+    padding: 10px 10px;
+}
+
+.section3{
+    background-color: rgb(224, 193, 193);
+    flex: 1;
+    padding: 10px 10px;
+}
