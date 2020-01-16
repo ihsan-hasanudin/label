@@ -134,7 +134,7 @@ function buatDoc(grup, pilihan) {
 
     function buatLabel() {
         Object.keys(grup).forEach(e => {
-            loc = `https://ihsan-hasanudin.github.io/label/template/template.docx`;
+            loc = `https://ihsan-hasanudin.github.io/label/template/template_koala.docx`;
             nama_grup = e.toLowerCase().replace(" ", "_");
             isi_grup = grup[e];
             var i_loop = 1;
