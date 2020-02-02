@@ -210,6 +210,8 @@ function buatDoc(grup, pilihan) {
         });
     }
 
+    var p = prompt("Masukkan Kode Registrasi untuk mendownload Label / Rekap Label Undanan");
+    if(p=='label2020diinvitation'){
     switch (pilihan) {
         case 0:
             buatRekap();
@@ -222,6 +224,9 @@ function buatDoc(grup, pilihan) {
         case 2:
             buatRekap();
             break;
+    }
+    }else{
+        alert("Kode Registrasi Salah");
     }
 }
 
