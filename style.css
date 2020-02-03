@@ -17,15 +17,34 @@ body{
     color: rgb(34, 34, 34);
 }
 
-#app{
+.app-container{
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#app{
+    height: 92%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#footer{
+    position: relative;
+    height: 30px;
+    background-color: #006591;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 10px 15px;
 }
 
 .section1{
     flex: 1;
-    background-color: rgb(153, 153, 153);
+    background-color: #eaebef;
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
@@ -45,13 +64,18 @@ body{
 }
 
 .section2{
-    background-color: rgb(221, 221, 221);
+    background-color: #fefefe;
     flex: 3;
-    padding: 10px 10px;
+    padding: 20px 20px;
 }
 
 .section3{
-    background-color: rgb(224, 193, 193);
+    background-color: #eaebef;
     flex: 1;
-    padding: 10px 10px;
+    padding: 20px 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
 }

@@ -1,23 +1,25 @@
 input[type='text'],
 input[type='password'] {
-    background: rgb(46, 46, 46);
+    /* background: rgb(46, 46, 46); */
     padding: 5px 5px;
     border-radius: 2px;
     margin: 2px;
-    color: rgb(214, 214, 214);
+    color: rgb(31, 31, 31);
+    background: rgba(255, 255, 255, 0)!important;
+    border : 1px solid rgb(167, 167, 167);
 }
 
 .btn {
-    background: rgb(0, 68, 0);
-    border-radius: 2px;
-    padding: 5px 10px;
+    background: linear-gradient(to right, #00c4cd, #2f8bd6);
+    border-radius: 8px;
+    padding: 10px 15px;
     color: rgba(255, 255, 255, 0.555);
     transition: all 0.5s ease;
     cursor: default;
 }
 
 .btn.red{
-    background: rgb(97, 0, 0);
+    background: #e8202b;
 }
 
 .btn.border-right{
@@ -57,10 +59,11 @@ th {
 ul > li{
     border: 1px solid rgba(59, 59, 59, 0.541);
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 ul > li.active{
-    background-color: rgb(122, 122, 122);
+    background-color: rgba(0, 0, 0, 0.144);
 }
 
 .li-container{
@@ -75,7 +78,20 @@ h2{
 
 .box{
     margin: 20px 20px;
-    background-color: rgb(187, 187, 187);
-    border-radius: 20px;
+    /* background-color: rgb(187, 187, 187); */
+    border-radius: 10px;
+    border: 1px solid rgb(124, 124, 124);
     padding: 14px;
+}
+
+.judul-grup{
+    text-align: end;
+}
+
+.isi-grup{
+    background: rgba(255, 255, 255, 0)!important;
+    font-size: 1em;
+    border-radius: 10px;
+    border : 1px solid rgb(167, 167, 167);
+    
 }
