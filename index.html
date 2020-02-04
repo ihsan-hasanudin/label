@@ -17,8 +17,10 @@
                 <h2>Membuat Grup</h2>
                 <div id="tambah-grup-section">
                     <form>
-                        <input type="text" placeholder="Isi nama grup" class="isi-grup" ng-model="tambahGrup_text" kapital-oto autofocus>
-                        <input class="btn" type="submit" value="TAMBAH GRUP" ng-click="tambahGrup(tambahGrup_text)">
+                        <input style="width:100%; margin-bottom: 10px;" type="text" placeholder="Isi nama grup" class="isi-grup" ng-model="tambahGrup_text" kapital-oto autofocus>
+                        <div style="display: flex; justify-content: center;">
+                            <input style="margin:auto;" class="btn" type="submit" value="TAMBAH GRUP" ng-click="tambahGrup(tambahGrup_text)">
+                        </div>
                     </form>
                 </div>
                 <h2>Data Grup</h2>
@@ -87,13 +89,13 @@
             </div>
             <div class="section3">
                 <!-- <h3>Buat Label</h3> -->
-                <div style="width: 100%; flex: 1;">
-                    <img src="./img/logo2.png" alt="" style="width: 60px;">
+                <div style="width: 100%; display:flex; justify-content: center; margin-bottom: 10px;">
+                    <img src="./img/logo2.png" style="width: 60px;">
                 </div>
                 <div id="buat-hapus-section">
-                    <button class="btn" ng-click="buatDokumen(0)">DOWNLOAD LABEL &amp; REKAP</button>
-                    <button class="btn" ng-click="buatDokumen(1)">DOWNLOAD LABEL SAJA</button>
-                    <button class="btn" ng-click="buatDokumen(2)">DOWNLOAD REKAP</button>
+                    <button class="btn pjg-jarak teks-hideung" ng-click="buatDokumen(0)">DOWNLOAD LABEL &amp; REKAP</button>
+                    <button class="btn pjg-jarak teks-hideung" ng-click="buatDokumen(1)">DOWNLOAD LABEL SAJA</button>
+                    <button class="btn pjg-jarak teks-hideung" ng-click="buatDokumen(2)">DOWNLOAD REKAP</button>
                     <!-- <button class="btn">HAPUS</button> -->
                 </div>
             </div>
